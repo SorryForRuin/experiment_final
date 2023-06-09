@@ -1,0 +1,24 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+    The end of the experiment
+{% endblock %}
+
+{% block content %}
+    <p>This concludes our experiment</p>
+    <p>Please fill out the survey provided on the next page</p>
+{#    <p>your rank is {{ player.rank }}</p>#}
+{#    <p>your l1 is {{ player.likelihood1 }}</p>#}
+{#    <p>your l2 is {{ player.likelihood2 }}</p>#}
+{#    <p>your div l1 is {{ player.div_l1 }}</p>#}
+{#    <p>your div l2 is {{ player.div_l2 }}</p>#}
+{#    Your payoff1 is {{ player.payoff1 }}#}
+{#    Your payoff2 is {{ player.payoff2 }}#}
+{#    Your actual_payoff is {{ player.actual_payoff }}#}
+
+
+    {% next_button %}
+{% endblock %}
+
+

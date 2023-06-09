@@ -1,0 +1,15 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+    Information about additional payoffs
+{% endblock %}
+
+{% block content %}
+    <p>You will be awarded an extra payment of {{ Constants.payment_per_correct_answer }} for every question answered correctly in the test</p>
+
+
+    {% next_button %}
+{% endblock %}
+
+

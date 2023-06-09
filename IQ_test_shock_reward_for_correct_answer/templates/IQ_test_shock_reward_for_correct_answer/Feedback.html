@@ -1,0 +1,48 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+    Feedback
+{% endblock %}
+
+{% block content %}
+    <p>Listed below is the feedback on your performance in comparison to 3 other players </p>
+    {% if player.NFresult1 == 2 and player.NFresult2 == 2 and player.NFresult3 == 2 %}
+        <p>You got a BETTER result than 3 of the 3 players you were compared with </p>
+        <p>You got a WORSE result than 0 of the 3 players you were compared with </p>
+    {% endif %}
+    {% if player.NFresult1 == 0 and player.NFresult2 == 2 and player.NFresult3 == 2 %}
+        <p>You got a BETTER result than 2 of the 3 players you were compared with </p>
+        <p>You got a WORSE result than 1 of the 3 players you were compared with </p>
+    {% endif %}
+    {% if player.NFresult1 == 2 and player.NFresult2 == 0 and player.NFresult3 == 2 %}
+        <p>You got a BETTER result than 2 of the 3 players you were compared with </p>
+        <p>You got a WORSE result than 1 of the 3 players you were compared with </p>
+    {% endif %}
+    {% if player.NFresult1 == 2 and player.NFresult2 == 2 and player.NFresult3 == 0 %}
+        <p>You got a BETTER result than 2 of the 3 players you were compared with </p>
+        <p>You got a WORSE result than 1 of the 3 players you were compared with </p>
+    {% endif %}
+    {% if player.NFresult1 == 2 and player.NFresult2 == 0 and player.NFresult3 == 0 %}
+        <p>You got a BETTER result than 1 of the 3 players you were compared with </p>
+        <p>You got a WORSE result than 2 of the 3 players you were compared with </p>
+    {% endif %}
+    {% if player.NFresult1 == 0 and player.NFresult2 == 2 and player.NFresult3 == 0 %}
+        <p>You got a BETTER result than 1 of the 3 players you were compared with </p>
+        <p>You got a WORSE result than 2 of the 3 players you were compared with </p>
+    {% endif %}
+    {% if player.NFresult1 == 0 and player.NFresult2 == 0 and player.NFresult3 == 2 %}
+        <p>You got a BETTER result than 1 of the 3 players you were compared with </p>
+        <p>You got a WORSE result than 2 of the 3 players you were compared with </p>
+    {% endif %}
+    {% if player.NFresult1 == 0 and player.NFresult2 == 0 and player.NFresult3 == 0 %}
+        <p>You got a BETTER result than 0 of the 3 players you were compared with </p>
+        <p>You got a WORSE result than 3 of the 3 players you were compared with </p>
+    {% endif %}
+
+    <p>Please study the feedback given. You will be asked to confirm your understanding by repeat it on the next step of the experiment</p>
+
+    {% next_button %}
+{% endblock %}
+
+
