@@ -1,0 +1,17 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+    Instructions
+{% endblock %}
+
+{% block content %}
+    <p>Thank you for agreeing to participate in our experiment.</p>
+    <p>You will be presented with 10 pictures with a part of the picture missing each time. Out of the 8 options you are presented (1-8) please select the one which best fits the the pattern of the original picture (Would fit best instead of the missing piece in the picture)</p>
+    <p>After you are finished with that assignment, please wait before you will be allocated to a group</p>
+    <p>When the group allocation process is complete, please answer the future questions. Make sure to read the instructions given with each question carefully</p>
+
+    {% next_button %}
+{% endblock %}
+
+

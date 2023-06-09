@@ -1,0 +1,15 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+    Unfortunately, you answered wrong :(
+{% endblock %}
+
+{% block content %}
+    <p>You will be redirected to the Feedback page again, please re-read it and confirm that you understood the feedback correctly</p>
+
+
+    {% next_button %}
+{% endblock %}
+
+

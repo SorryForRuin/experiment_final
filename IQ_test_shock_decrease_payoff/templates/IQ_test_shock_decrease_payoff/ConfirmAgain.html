@@ -1,0 +1,15 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+    Conformation of understanding
+{% endblock %}
+
+{% block content %}
+    <p>Please confirm your understanding of the feedback by answering the questions below</p>
+    <p>This is your last try to do this task correctly, otherwise the experiment will end for you</p>
+    {% formfield player.ConfirmQ1 %}
+    {% formfield player.ConfirmQ2 %}
+    {% formfield player.ConfirmQ3 %}
+    {% next_button %}
+{% endblock %}

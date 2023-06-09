@@ -1,0 +1,16 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+    Information about changes in payoffs
+{% endblock %}
+
+{% block content %}
+    <p>All of your payoffs have been decreased by {{ Constants.decrease_in_payment }}</p>
+    <p>However, You will be awarded an extra payment of {{ Constants.payment_per_correct_answer }} for every question answered correctly in the test</p>
+
+
+    {% next_button %}
+{% endblock %}
+
+

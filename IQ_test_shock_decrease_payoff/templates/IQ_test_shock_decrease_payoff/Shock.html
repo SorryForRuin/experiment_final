@@ -1,0 +1,15 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+    Information about negative shock
+{% endblock %}
+
+{% block content %}
+    <p>All of your payoffs have been decreased by {{ Constants.decrease_in_payment }}</p>
+
+
+    {% next_button %}
+{% endblock %}
+
+

@@ -1,0 +1,44 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+    Feedback
+{% endblock %}
+
+{% block content %}
+    <p>Listed below is the feedback on your performance in comparison to other players </p>
+    {% if player.NFresult1 == 2 %}
+        <p> You got a better result than one of the other player </p>
+    {% endif %}
+    {% if player.NFresult1 == 1 %}
+        <p>You got the same result as one of the other player </p>
+    {% endif %}
+    {% if player.NFresult1 == 0 %}
+        <p>You got a worse result than one of the other player </p>
+    {% endif %}
+
+   {% if player.NFresult2 == 2 %}
+        <p> You got a better result than one of the other player </p>
+    {% endif %}
+    {% if player.NFresult2 == 1 %}
+        <p>You got the same result as one of the other player </p>
+    {% endif %}
+    {% if player.NFresult2 == 0 %}
+        <p>You got a worse result than one of the other player </p>
+    {% endif %}
+
+    {% if player.NFresult3 == 2 %}
+        <p> You got a better result than one of the other player </p>
+    {% endif %}
+    {% if player.NFresult3 == 1 %}
+        <p>You got the same result as one of the other player </p>
+    {% endif %}
+    {% if player.NFresult3 == 0 %}
+        <p>You got a worse result than one of the other player </p>
+    {% endif %}
+
+    {% next_button %}
+{% endblock %}
+
+
+

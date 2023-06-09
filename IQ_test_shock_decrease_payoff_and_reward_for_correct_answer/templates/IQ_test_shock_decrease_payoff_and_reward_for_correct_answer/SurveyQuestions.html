@@ -1,0 +1,23 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+    Please answer these following questions
+{% endblock %}
+
+{% block content %}
+    Question 1
+    {% formfield player.gender %}
+    Question 2
+    {% formfield player.age %}
+    Question 3
+    {% formfield player.education %}
+    Question 4
+    {% formfield player.employment %}
+    Question 5
+    {% formfield player.marriage %}
+
+
+    {% next_button %}
+
+{% endblock %}

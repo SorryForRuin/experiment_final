@@ -1,0 +1,15 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+    Once again, please state your belief about your performance
+{% endblock %}
+
+{% block content %}
+   <p>Please state the likelihood of your result being among the upper half of the group</p>
+    {% formfields %}
+
+    {% next_button %}
+{% endblock %}
+
+
